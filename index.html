@@ -159,7 +159,13 @@
     }
 
     .wordmark .dot {
-      color: var(--accent);
+      display: inline-block;
+      width: 0.4em;
+      height: 0.4em;
+      background: var(--accent);
+      border-radius: 50%;
+      vertical-align: baseline;
+      margin-left: 0.4em;
       mix-blend-mode: normal;
     }
 
@@ -231,6 +237,16 @@
     .hero-name .accent {
       color: var(--accent);
       font-family: var(--font-display);
+    }
+
+    .hero-name .hero-dot {
+      display: inline-block;
+      width: 0.09em;
+      height: 0.09em;
+      background: var(--accent);
+      border-radius: 50%;
+      vertical-align: baseline;
+      margin-left: 0.1em;
     }
 
     .hero-bottom {
@@ -778,7 +794,7 @@
 
   <!-- Top bar -->
   <header class="topbar">
-    <div class="wordmark">Vlad Peregon<span class="dot">.</span></div>
+    <div class="wordmark">Vlad Peregon<span class="dot"></span></div>
     <div class="topbar-meta">DDF / 2026</div>
   </header>
 
@@ -799,7 +815,7 @@
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <h1 class="hero-name">Vlad<br>Pere<span class="accent">G</span>on</h1>
+      <h1 class="hero-name">Vlad<br>Peregon<span class="hero-dot"></span></h1>
 
       <div class="hero-bottom">
         <div class="hero-tag">
@@ -851,7 +867,7 @@
           Independent creative based in Düsseldorf. I make cinematic short-form films and spec ads for fashion brands — where AI meets live-action.
         </p>
         <p>
-          Campaign-quality work, not content. The pieces are dark, technical, and brand-relevant — closer to a commercial than a reel. Currently building a portfolio for techwear, fashion, and lifestyle brands.
+          Campaign-quality work, not content. The pieces are dark, technical, and brand-relevant — closer to a fashion campaign than a content reel. Currently building a portfolio for techwear, fashion, and lifestyle brands.
         </p>
 
         <div class="about-meta">
@@ -886,7 +902,7 @@
         Update the href below with the Instagram post URL once LFDY is published.
         For now it links to your IG profile as a fallback.
       -->
-      <a href="https://instagram.com/vlad_peregon" class="work-piece reveal" target="_blank" rel="noopener" data-cursor="hover">
+      <a href="https://www.instagram.com/p/DYCp7YSMFu7/" class="work-piece reveal" target="_blank" rel="noopener" data-cursor="hover">
         <video class="work-piece-video" autoplay muted loop playsinline preload="metadata">
           <source src="lfdy-hero.mp4" type="video/mp4">
         </video>
